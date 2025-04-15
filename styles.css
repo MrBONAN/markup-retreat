@@ -1,1 +1,21 @@
-/* Пиши стили тут */
+.star-rating {
+    display: flex;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 40px;
+    color: gold;
+    cursor: pointer;
+}
+
+.star-rating label:hover ~ label {
+    color: lightgray;
+}
+
+.star-rating input:checked ~ label {
+    color: lightgray;
+}
